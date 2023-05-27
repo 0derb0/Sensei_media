@@ -16,11 +16,6 @@ body {
     align-items: center;
 }
 
-.nav_bar>img {
-    height: 70px;
-    width: 325x;
-}
-
 .nav_spis {
     display: inline-block;
     height: 24px;
@@ -49,3 +44,11 @@ body {
     background: #F32C6D;
 }
 
+@media (max-width: 700px) {
+    .nav_bar {
+        height: 100px;
+    }
+    .nav_text {
+        margin: 0 2px;
+    }
+}
