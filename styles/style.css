@@ -103,6 +103,7 @@ header {
     padding: 14px 30px;
     background: #77B2D3;
     border-radius: 250px;
+    color: #ffffff;
 }
 
 @media (max-width: 1300px) {
@@ -134,4 +135,62 @@ header {
     .text2 {
         margin: 0;
     }
+    header img{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    header {
+        justify-content: center;
+        margin: 0;
+    }
+    .content {
+        justify-content: center;
+    }
+    .text1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.sense_in_desigh {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    align-items: flex-start;
+}
+
+.sense_in_desigh p{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    margin-left: 55px;
+}
+
+.sense__cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sense_line {
+    border-left: 2px solid black;
+}
+
+.sense__card h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.sense__card p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
