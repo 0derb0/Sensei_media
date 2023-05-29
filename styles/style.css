@@ -245,11 +245,13 @@ header {
     }
     .sense_in_desigh p {
         display: none;
+        max-height: 0;
     }
     .sense__card p{
         display: block;
     }
     .sense__cards{
+        max-height: 0;
         margin-top: 25px;
         display: none;
         flex-direction: column;
