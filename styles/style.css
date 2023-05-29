@@ -37,13 +37,22 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
+    transition-duration: 1s;
 }
 .list li {
     display: flex;
     align-items: center;
+    transition-duration: 1s;
 }
 #toggler, .navbar label {
     display: none;
+}
+.list:hover {
+    background-color: #F32C6D;
+    border-radius: 9px;
+}
+.list li:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 755px) {
@@ -61,16 +70,15 @@ body {
         align-items: center;
         padding: 20px;
     }
+    .list:hover {
+        background-color: #F7F6FF;
+    }
     .navbar label {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
         height: 50px;
         width: 50px;
-        /* background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(free-icon-txt-5097510.ico);
-        background-color: aqua; */
     }
     .navbar label img {
         width: 50px;
@@ -184,6 +192,10 @@ header {
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
     align-items: flex-start;
+    padding-bottom: 25px;
+}
+.sense__adaptive_button {
+    display: none;
 }
 
 .sense_in_desigh p{
@@ -200,7 +212,7 @@ header {
 }
 
 .sense_line {
-    border-left: 2px solid black;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .sense__card h2{
@@ -216,4 +228,37 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media screen and (max-width: 900px) {
+    .sense_in_desigh {
+        align-items: center;
+    }
+    .sense__adaptive_button {
+        display: block;
+        background-color: #77B2D3;
+        height: 30px;
+        width: 100%;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+    }
+    .sense_in_desigh p {
+        display: none;
+    }
+    .sense__card p{
+        display: block;
+    }
+    .sense__cards{
+        margin-top: 25px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .sense_line {
+        height: 0;
+        width: 100px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
 }
