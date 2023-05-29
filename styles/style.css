@@ -7,7 +7,7 @@ body {
     background: #F7F6FF;
 }
 
-.nav_bar {
+.navbar {
     background: #ffffff;
     height: 85px;
     width: 100%;
@@ -17,35 +17,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
-.nav_spis {
-    /* display: inline-block;
-    height: 24px;
-    width: 410px; */
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    padding: 0;
-}
-.menu {
-    height: inherit;
-    width: auto;
-    display: flex;
-    align-items: center;
-}
-.menu button {
-    margin-left: 25px;
-}
-
-.nav_text {
-    display: inline;
-    text-align: center;
-    /* margin: 0 10px; */
-}
-.nav_text:hover {
-    text-decoration:underline;
-}
-
 .nav_but {
     width: 205px;
     height: 54px;
@@ -54,19 +25,29 @@ body {
     outline: none;
     border: none;
 }
-.nav_but:hover {
-    text-decoration:underline;
-    background: #F32C6D;
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
 }
-#toggler, .nav_bar label {
+.logo {
+    margin-right: 50px;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.list li {
+    display: flex;
+    align-items: center;
+}
+#toggler, .navbar label {
     display: none;
 }
 
-@media (max-width: 720px) {
-    /* .nav_bar {
-        height: 130px;
-    } */
-    .nav_bar {
+@media screen and (max-width: 755px) {
+    .navbar{
         height: auto;
         margin-bottom: 25px;
     }
@@ -74,16 +55,24 @@ body {
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        flex-direction: column;
     }
-    .nav_bar label {
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
         height: 50px;
         width: 50px;
+        /* background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(free-icon-txt-5097510.ico);
+        background-color: aqua; */
     }
-    .nav_bar label img {
+    .navbar label img {
         width: 50px;
         height: 50px;
     }
@@ -91,6 +80,7 @@ body {
         max-height: 100%;
     }
 }
+
 
 header {
     display: flex;
@@ -174,6 +164,7 @@ header {
 
 @media (max-width: 830px) {
     header {
+        padding-top: 25px ;
         justify-content: center;
         margin: 0;
     }
