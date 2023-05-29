@@ -3,7 +3,8 @@ let autoOrZero = 'auto'
 
 function senseInDesighButton(){
     document.getElementById('open_cards').style.display = openorclose;
-    document.getElementById('open_cards').style.maxHeight = autoOrZero;
+    // document.getElementById('open_cards').style.maxHeight = autoOrZero;
+    // document.getElementsByClassName('sense_in_desigh').style.maxHeight = autoOrZero;
     if (openorclose == 'flex') {
         openorclose = 'none'
     } else if (openorclose == 'none') {
@@ -14,4 +15,5 @@ function senseInDesighButton(){
     }else if (autoOrZero == '0') {
         autoOrZero = 'auto'
     }
+   
 }

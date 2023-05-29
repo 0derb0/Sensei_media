@@ -233,6 +233,7 @@ header {
 @media screen and (max-width: 900px) {
     .sense_in_desigh {
         align-items: center;
+        justify-content: space-between;
     }
     .sense__adaptive_button {
         display: block;
@@ -245,13 +246,13 @@ header {
     }
     .sense_in_desigh p {
         display: none;
-        max-height: 0;
+        max-height: auto;
     }
     .sense__card p{
         display: block;
     }
     .sense__cards{
-        max-height: 0;
+        max-height: auto;
         margin-top: 25px;
         display: none;
         flex-direction: column;
