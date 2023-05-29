@@ -15,18 +15,32 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav_spis {
-    display: inline-block;
+    /* display: inline-block;
     height: 24px;
-    width: 410px;
+    width: 410px; */
     list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+.menu {
+    height: inherit;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.menu button {
+    margin-left: 25px;
 }
 
 .nav_text {
     display: inline;
-    margin: 0 10px;
+    text-align: center;
+    /* margin: 0 10px; */
 }
 .nav_text:hover {
     text-decoration:underline;
@@ -44,19 +58,37 @@ body {
     text-decoration:underline;
     background: #F32C6D;
 }
-
-@media (max-width: 700px) {
-    .nav_bar {
-        height: 100px;
-    }
-    .nav_text {
-        margin: 0 2px;
-    }
+#toggler, .nav_bar label {
+    display: none;
 }
 
-@media (max-width: 400px) {
-    .nav_bar {
+@media (max-width: 720px) {
+    /* .nav_bar {
         height: 130px;
+    } */
+    .nav_bar {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .nav_bar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    .nav_bar label img {
+        width: 50px;
+        height: 50px;
+    }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
     }
 }
 
