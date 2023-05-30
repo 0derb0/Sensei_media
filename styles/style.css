@@ -137,8 +137,11 @@ header {
 }
 
 @media (max-width: 1300px) {
+    header {
+        height: auto;
+    }
     .text2 {
-        margin-top: 20px;
+        margin: 20px 0;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -234,13 +237,15 @@ header {
     .sense_in_desigh {
         align-items: center;
         justify-content: space-between;
+        height: auto;
+        padding: 0;
     }
     .sense__adaptive_button {
         display: block;
         background-color: #77B2D3;
         height: 30px;
         width: 100%;
-        border-radius: 9px;
+        border-radius: 20px;
         outline: none;
         border: none;
     }
@@ -264,4 +269,8 @@ header {
         width: 100px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     }
+}
+
+@media screen and (max-width: 450px) {
+    .sense_in_desigh {margin: 20px;}
 }

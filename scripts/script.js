@@ -3,7 +3,7 @@ let autoOrZero = 'auto'
 
 function senseInDesighButton(){
     document.getElementById('open_cards').style.display = openorclose;
-    // document.getElementById('open_cards').style.maxHeight = autoOrZero;
+    document.getElementById('open_cards').style.maxHeight = '700px';
     // document.getElementsByClassName('sense_in_desigh').style.maxHeight = autoOrZero;
     if (openorclose == 'flex') {
         openorclose = 'none'
