@@ -224,6 +224,7 @@ header {
     font-weight: 800;
     font-size: 40px;
     line-height: 48px;
+    color: #F32C6D;
 }
 
 .sense__card p{
@@ -239,6 +240,7 @@ header {
         justify-content: space-between;
         height: auto;
         padding: 0;
+        box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
     }
     .sense__adaptive_button {
         display: block;
@@ -258,7 +260,7 @@ header {
     }
     .sense__cards{
         max-height: auto;
-        margin-top: 25px;
+        margin: 25px 0;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -274,3 +276,69 @@ header {
 @media screen and (max-width: 450px) {
     .sense_in_desigh {margin: 20px;}
 }
+
+.our_services {
+    margin: 76px 115px 0 115px;
+}
+.services_content {
+    display: flex;
+    align-items: center;
+}
+.services__cards{
+    display: flex;
+    gap: 25px;
+    margin: auto 10-px;
+    overflow-x: auto;
+}
+.services__cards::-webkit-scrollbar {
+}
+
+.our_services img {
+    height: 20px;
+    width: 20px;
+}
+
+.services__card {
+    background-color: #77B2D3;
+    height: 145px;
+    width: 220px;
+    border-radius: 15px;
+    padding-top: 3px;
+    box-shadow: 0px 4px 18px 0px #00000014;
+}
+
+.services__card h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0;
+    margin: 11px 52px;
+}
+
+.services__card div {
+    background-color: #F7F6FF;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.services__card ul{
+    list-style-image: url(img/Галочка.png);
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 18px;
+    margin-bottom: 90px;
+    display: none;
+}
+.services__card hr{display: none;}
+.services__card p{padding-left: 5px;}
+.services__card span {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    color: #F32C6D;
+}
+
+.services__card:hover ul, .services__card:hover hr{display:block}
